@@ -2,13 +2,16 @@
     margin: 0
 }
 
+/****General*****/
+
 nav {
     padding: 1vw;
     background-color: #2b2530;
     padding-left: 15vw;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fcfff6;
     font-family: 'PT Sans', sans-serif;
+
 
 }
 
@@ -23,7 +26,7 @@ nav a {
     background-color: #fcfff6;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    padding: 9vw;
+    padding: 5vw;
     font-size: 3em;
     color: #e6bfaa;
 
@@ -31,12 +34,15 @@ nav a {
 
 #name h1 {
     font-weight: 400;
+    border-bottom: 0.5vw solid;
 }
 
 #name h1:hover {
     color: #fcb3ba;
 
 }
+
+/*****info****/
 
 #info {
     background-color: #e6bfaa;
@@ -47,19 +53,38 @@ nav a {
 
 #info h1 {
     font-family: 'Playfair Display', sans-serif;
-    padding-bottom: 1vw;
+    margin-bottom: 1vw;
     font-weight: 500;
     font-size: 2.5em;
     color: #fcfff6;
+    border-bottom: 0.5vw solid;
 }
 
 .info_text {
     background-color: #fcfff6;
     width: 60vw;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 2vw;
     font-family: 'PT Sans', sans-serif;
+    border-radius: 3px;
+}
+
+.info_portrait {
+    position: relative;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid #fcfff6;
+    display: inline-block;
+    margin-bottom: 2vw;
+}
+
+.info_portrait img {
+    height: auto;
+    width: 400px;
+
 }
 
 footer {
@@ -71,19 +96,23 @@ footer {
     color: #fcfff6;
 }
 
+/********cases*******/
+
 #cases {
     background-color: #e6bfaa;
     text-align: center;
     padding: 5vw 10vw 10vw 10vw;
     color: #2b2530;
+
 }
 
 #cases h1 {
     font-family: 'Playfair Display', sans-serif;
-    padding-bottom: 1vw;
+    margin-bottom: 1vw;
     font-weight: 500;
     font-size: 2.5em;
     color: #fcfff6;
+    border-bottom: 0.5vw solid;
 }
 
 .case_images {
@@ -95,8 +124,288 @@ footer {
 
 .case_images_content {
     margin: 1vw;
-    height: 300px;
+    height: 333px;
     width: 500px;
     flex-basis: 1;
     flex-grow: 500px;
+}
+
+.case_images_content img {
+    height: 100%;
+    width: auto;
+}
+
+.case_images_content:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.case_box {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #231f20;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.case_boxes_content {
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    height: 80%;
+    width: 70%;
+    background-color: rgba(253, 194, 181, 1);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #fcfff6;
+}
+
+.display {
+    display: none;
+}
+
+/******CASES CONTENT *****/
+
+/****POP ART****/
+
+.pop_art_wide {
+    flex-grow: 1;
+    width: 50%;
+    background-color: #fcfff6;
+    ;
+    margin: 2vw 1vw 2vw 2vw;
+    padding: 2vw;
+    border-radius: 3px;
+}
+
+.pop_art_wide h2 {
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1vw;
+    font-weight: 500;
+    font-size: 1em;
+    color: #e6bfaa;
+    border-bottom: 2px solid;
+}
+
+
+.pop_art_wide p {
+
+    font-size: 0.8em;
+    vertical-align: middle;
+    padding: 1vw;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 3px;
+    color: #2b2530;
+}
+
+.pop_art_wide a {
+    color: #2b2530;
+
+
+}
+
+.pop_art_wide a:hover {
+    color: purple;
+    font-size: 1.1em;
+
+}
+
+
+.pop_art_narrow {
+    flex-grow: 1;
+    width: 50%;
+
+    margin: 2vw 2vw 2vw 1vw;
+
+}
+
+.pop_art_narrow_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.pop_art_images {
+    height: 50%;
+}
+
+.pop_art_images img {
+    width: 100%;
+    margin: 0.5vw;
+    border: 4px solid #fcfff6;
+    border-radius: 3px;
+}
+
+.pop_art_images img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+/****** ATLAS BAR ******/
+
+.atlas_wide {
+    flex-grow: 1;
+    width: 50%;
+    background-color: #fcfff6;
+    ;
+    margin: 2vw 1vw 2vw 2vw;
+    padding: 2vw;
+    border-radius: 3px;
+}
+
+.atlas_wide h2 {
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1vw;
+    font-weight: 500;
+    font-size: 1em;
+    color: #e6bfaa;
+    border-bottom: 2px solid;
+}
+
+
+.atlas_wide p {
+
+    font-size: 0.8em;
+    vertical-align: middle;
+    padding: 1vw;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 3px;
+    color: #2b2530;
+}
+
+.atlas_wide a {
+    color: #2b2530;
+
+
+}
+
+.atlas_wide a:hover {
+    color: purple;
+    font-size: 1.1em;
+
+}
+
+
+.atlas_narrow {
+    flex-grow: 1;
+    width: 50%;
+
+    margin: 2vw 2vw 2vw 1vw;
+
+}
+
+.atlas_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.atlas_content img {
+    width: 100%;
+    border: 4px solid #fcfff6;
+
+}
+
+.atlas_content :hover {
+    transform: scale(1.05, 1.05);
+}
+
+.atlas_content {
+    flex-grow: 0.5;
+    width: 100%;
+    height: 17vw;
+    margin-bottom: 2vw;
+
+    border-radius: 3px;
+}
+
+.atlas_content iframe {
+    height: 100%;
+    width: 100%;
+    border: 4px solid #fcfff6;
+}
+
+/****DOX*****/
+
+.dox_wide {
+    flex-grow: 1;
+    width: 50%;
+    background-color: #fcfff6;
+    ;
+    margin: 2vw 1vw 2vw 2vw;
+    padding: 2vw;
+    border-radius: 3px;
+}
+
+.dox_wide h2 {
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1vw;
+    font-weight: 500;
+    font-size: 1em;
+    color: #e6bfaa;
+    border-bottom: 2px solid;
+}
+
+
+.dox_wide p {
+
+    font-size: 0.8em;
+    vertical-align: middle;
+    padding: 1vw;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 3px;
+    color: #2b2530;
+}
+
+.dox_wide a {
+    color: #2b2530;
+
+
+}
+
+.dox_wide a:hover {
+    color: purple;
+    font-size: 1.1em;
+
+}
+
+
+.dox_narrow {
+    flex-grow: 1;
+    width: 50%;
+
+    margin: 2vw 2vw 2vw 1vw;
+
+}
+
+.dox_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.dox_content img {
+    width: 100%;
+    border: 4px solid #fcfff6;
+
+}
+
+.dox_content :hover {
+    transform: scale(1.05, 1.05);
+}
+
+.dox_content {
+    flex-basis: flex-grow: 0.5;
+    width: 100%;
+    height: 17vw;
+    margin-bottom: 2vw;
+
+    border-radius: 3px;
+}
+
+.kea_narrow {
+    text-align: center;
+    width: 40%;
+    margin: 2vw;
+    background-color: #fcfff6;
 }
