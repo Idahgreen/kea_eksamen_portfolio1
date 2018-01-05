@@ -413,17 +413,6 @@ footer {
 
 /*****CV******/
 
-#cv {
-    width: 100%;
-}
-
-.button_insig {
-    text-align: center;
-    display: block;
-    margin-left: 50%;
-    height: 3vw;
-    width: 3vw;
-    margin: 1vw;
-    background-color: aliceblue;
-    border-radius: 50%;
+.cv {
+    padding-bottom: 5vw;
 }
