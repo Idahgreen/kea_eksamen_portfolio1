@@ -11,6 +11,7 @@ nav {
     font-size: 1.2em;
     color: #fcfff6;
     font-family: 'PT Sans', sans-serif;
+    border-bottom: 2px solid black;
 
 
 }
@@ -408,4 +409,21 @@ footer {
     width: 40%;
     margin: 2vw;
     background-color: #fcfff6;
+}
+
+/*****CV******/
+
+#cv {
+    width: 100%;
+}
+
+.button_insig {
+    text-align: center;
+    display: block;
+    margin-left: 50%;
+    height: 3vw;
+    width: 3vw;
+    margin: 1vw;
+    background-color: aliceblue;
+    border-radius: 50%;
 }
