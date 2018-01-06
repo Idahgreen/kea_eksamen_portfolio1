@@ -1,5 +1,6 @@
 * {
-    margin: 0
+    margin: 0;
+
 }
 
 /****General*****/
@@ -22,6 +23,12 @@ nav a {
 
 }
 
+nav a:hover {
+    color: hotpink;
+    text-decoration: none;
+
+
+}
 
 #name {
     background-color: #fcfff6;
@@ -36,6 +43,11 @@ nav a {
 #name h1 {
     font-weight: 400;
     border-bottom: 0.5vw solid;
+}
+
+#name a {
+    text-decoration: none;
+    color: #e6bfaa;
 }
 
 #name h1:hover {
@@ -186,7 +198,7 @@ footer {
     margin-bottom: 1vw;
     font-weight: 500;
     font-size: 1em;
-    color: #e6bfaa;
+    color: #bf9483;
     border-bottom: 2px solid;
 }
 
@@ -261,7 +273,7 @@ footer {
     margin-bottom: 1vw;
     font-weight: 500;
     font-size: 1em;
-    color: #e6bfaa;
+    color: #bf9483;
     border-bottom: 2px solid;
 }
 
@@ -344,7 +356,7 @@ footer {
     margin-bottom: 1vw;
     font-weight: 500;
     font-size: 1em;
-    color: #e6bfaa;
+    color: #bf9483;
     border-bottom: 2px solid;
 }
 
@@ -413,6 +425,57 @@ footer {
 
 /*****CV******/
 
-.cv {
-    padding-bottom: 5vw;
+#cv {
+    background-color: #e6bfaa;
+    text-align: center;
+    padding: 5vw 10vw 1vw 10vw;
+    color: #2b2530;
+}
+
+#cv h1 {
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 1vw;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #fcfff6;
+    border-bottom: 0.5vw solid;
+}
+
+.mid_splash {
+    width: 100%;
+    background-image: url(images/splash.png);
+    background-color: #e6bfaa;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 41vw;
+}
+
+.splash_text {
+    margin-top: 23vw;
+    margin-right: 20vw;
+    border: 4px solid #e6bfaa;
+}
+
+.case_button {
+    margin-top: 3vw;
+    margin-right: 80vw;
+}
+
+.case_button a {
+    text-decoration: none;
+    color: white;
+    margin: 1vw 1vw 1vw 8vw;
+    padding: 1vw;
+    height: 7%;
+    width: 5%;
+    text-align: left;
+    background-color: black;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 10px;
+
+}
+
+.case_button:hover {
+    transform: scale(1.05, 1.05);
 }
