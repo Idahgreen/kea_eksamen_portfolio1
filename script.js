@@ -1,5 +1,25 @@
     $(window).on("load", pageload);
 
+    window.onscroll = function () {
+        scrollFunction();
+    }
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("topbutton").style.display = "block";
+        } else {
+            document.getElementById("topbutton").style.display = "none";
+        }
+    }
+
+    function buttonPress() {
+        $("topbutton").on("click", topFunction);
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
     function pageload() {
         console.log("01 script has loaded");
